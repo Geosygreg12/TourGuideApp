@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Tour Guide App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="States">States</string>
+    <string name="Emergency">Emergency</string>
+    <string name="title_activity_cross_river">CrossRiver</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="enugu_info">Enugu, nicknamed the “coal city” is the capital of Enugu state in South-Eastern Nigeria.
+The city is popular for its cuisine, robust industries and of course, the local palm wine.
+Despite this, there’s a lot many people don’t know about Enugu. But of course, it’s never too late to learn.
+
+The name Enugu derived from two Igbo words, “Énú Ụ́gwụ́” means “top of the hill or mountain”.
+The name obviously denotes the city’s geography naturally decorated with rolling hills and valleys.
+The city was named after “Enugu Ngwo” under which coal was discovered.
+Enugu inhabited majorly by the Nike subgroup of the Igbo people, “ndi Nike” in the Igbo language means “those with strength or power”.
+
+Enugu city has a population of about 1 million people.
+This is one of the lesser populated metropolises in Nigeria.
+The city experiences two distinct seasons: the recurring rainy and dry season separated by the dusty Harmattan weather.
+It has a mean temperature of 26.7°C making it one of the most habitable cities in Nigeria.
+Travellers to the city are advised to visit this “British Developed City” during the dry season after the rains have subsided.</string>
+    <string name="crossRiver_Info">Cross River State is a coastal state in South Eastern Nigeria, named after the Cross River, which passes through the state.
+Located in the Niger Delta, Cross River State occupies 20,156 square kilometers.
+It shares boundaries with Benue State to the north, Enugu and Abia States to the west,
+to the east by Cameroon Republic and to the south by Akwa-Ibom and the Atlantic Ocean.
+
+The state has an estimated population of about 2.89 million people (2006) who have a rich and unique cultural heritage.
+Ejagham and Efik are major languages of this state,
+but the Igbo tribe and language are also present in its western land borders.
+Forty percent of the estimated population constitutes the active population that is engaged in various economic activities;
+ranging from subsistence agriculture to urban commerce and transport business.
+
+Cross River State belongs to tropical rainfall belt where rainfall is usually seasonal and at times very heavy.
+Humid tropical climate of about 1300 3000mm rain fall and 30°C mean annual temperatures prevail over Cross River State,
+except on the Obudu Plateau, where the climate is subtemperate, with temperatures of 15°C 23°C.</string>
+
+    <string name="lagos_info">Lagos (Yoruba: Èkó) is a city in the Nigerian state of Lagos.
+The city, with its adjoining conurbation, is the most populous in Nigeria, and the most populous on the African continent.
+It is one of the fastest growing cities in the world, and also one of the most populous urban agglomerations.
+Lagos is a major financial centre in Africa;
+the megacity has the highest GDP, and also houses one of the largest and busiest ports on the continent.
+
+Lagos, which means "lakes", was a name given to the settlement by the Portuguese.
+The present-day Lagos state has a high percentage of Awori clan, who migrated to the area from Isheri along the Ogun river.
+Throughout history, it was home to a number of warring ethnic groups who had settled in the area.
+
+Average temperatures in Lagos vary very little.
+Considering humidity, temperatures feel hot all year with a fair chance of precipitation about half of the year.
+The area is less temperate than some — in the 14th percentile for pleasant weather — compared to tourist destinations worldwide.
+Weeks with ideal weather are listed above.
+If you’re looking for the very warmest time to visit Lagos, the hottest months are March, April,
+and then February. See average monthly temperatures below.
+The warmest time of year is generally mid March where highs are regularly around 93.3°F (34.1°C) with temperatures rarely dropping below 78.7°F (25.9°C) at night.</string>
+
+    <string name="action_example">Example action</string>
+</resources>
