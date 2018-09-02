@@ -3,11 +3,12 @@ package com.example.android.tourguideapp;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -24,12 +25,15 @@ public class myfragment extends android.support.v4.app.Fragment{
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        ListView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
+        RecyclerView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
         ArrayList<info> infos = new ArrayList<>();
         infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.nondon_hotels, "Nondon Hotels"));
         infos.add(new info(R.drawable.images, R.drawable.images1, R.drawable.images4, "Examples"));
         infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.nondon_hotels, "Another"));
-        horizontalListRoot.setAdapter(new infoAdapter(getContext(), R.layout.list_item, infos));
+        LinearLayoutManager myHorizontalManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+        horizontalListRoot.setLayoutManager(myHorizontalManager);
+        horizontalListRoot.setHasFixedSize(true);
+        horizontalListRoot.setAdapter(new Recycler(infos));
 
         ArrayList<String> moreinfo = new ArrayList<>();
         moreinfo.add("Related: ");
