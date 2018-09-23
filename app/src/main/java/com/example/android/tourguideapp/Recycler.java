@@ -37,7 +37,8 @@ class Recycler extends RecyclerView.Adapter<Recycler.myViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull myViewHolder holder, int position) {
-
+//here the textviews are binded with the views by passing the mybind method
+        //described in the viewholder class
 
         holder.myBind(position);
 

@@ -69,4 +69,20 @@ The warmest time of year is generally mid March where highs are regularly around
     <string name="lagos">Lagos</string>
     <string name="enugu">Enugu</string>
     <string name="cross_river">Cross River</string>
+    <string name="nondonHotel">Nondon Hotels</string>
+    <string name="nikeLakeHotel">Nike Lake Hotel</string>
+    <string name="oaklanHotel">Oakland Hotel</string>
+    <string name="related">Related:</string>
+    <string name="adigSuites">Adig Suites</string>
+    <string name="robanHotels">Roban Hotels</string>
+    <string name="gldenRoyale">Golden Royale</string>
+    <string name="ceasarPlce">Ceasar\'s Palace Hotel</string>
+    <string name="ibisHotel">Ibis Hotel</string>
+    <string name="fourPoint">Four Point Hotel</string>
+    <string name="sheratonHotel">Sheraton Hotel</string>
+    <string name="mirageHotel">Mirage Hotel</string>
+    <string name="moutySuites">Mounty Suites</string>
+    <string name="quickResponse">www.npf.gov.ng/complaint/</string>
+    <string name="policeStationsweb">www.npf.gov.ng</string>
+    <string name="uriHospitals">www.finelib.com/hospitals-and-medical-centres</string>
 </resources>

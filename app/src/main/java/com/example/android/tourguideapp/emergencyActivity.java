@@ -32,7 +32,7 @@ public class emergencyActivity extends Fragment implements View.OnClickListener 
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.quick_response_lines:
-                String quickResponse = "www.npf.gov.ng/complaint/";
+                String quickResponse = getString(R.string.quickResponse);
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(quickResponse));
                 if(browserIntent.resolveActivity(getContext().getPackageManager())!= null){
                     startActivity(browserIntent);
@@ -40,7 +40,7 @@ public class emergencyActivity extends Fragment implements View.OnClickListener 
                 break;
 
             case R.id.police_stations:
-                String string = "www.npf.gov.ng";
+                String string = getString(R.string.policeStationsweb);
                 Intent policeStations = new Intent(Intent.ACTION_VIEW, Uri.parse(string));
                 if(policeStations.resolveActivity(getContext().getPackageManager())!= null){
                     startActivity(policeStations);
@@ -48,7 +48,7 @@ public class emergencyActivity extends Fragment implements View.OnClickListener 
                 break;
 
             case R.id.hospitals:
-                String uriHospitals = "www.finelib.com/hospitals-and-medical-centres";
+                String uriHospitals = getString(R.string.uriHospitals);
                 Intent hospitalsIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uriHospitals));
                 if(hospitalsIntent.resolveActivity(getContext().getPackageManager())!= null){
                     startActivity(hospitalsIntent);

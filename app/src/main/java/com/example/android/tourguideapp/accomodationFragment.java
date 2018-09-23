@@ -28,20 +28,20 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
         if (Enugu.enuguKey) {
             RecyclerView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.nondon_hotels, "Nondon Hotels", "Enugu"));
-            infos.add(new info(R.drawable.nike_lake, R.drawable.nike_lake2, R.drawable.nike_lake3, "Nike Lake Hotel", "Enugu"));
-            infos.add(new info(R.drawable.oakland, R.drawable.oakland2, R.drawable.oakland3, "Oakland Hotel", "Enugu"));
+            infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.nondon_hotels, getString(R.string.nondonHotel), getString(R.string.enugu)));
+            infos.add(new info(R.drawable.nike_lake, R.drawable.nike_lake2, R.drawable.nike_lake3, getString(R.string.nikeLakeHotel), getString(R.string.enugu)));
+            infos.add(new info(R.drawable.oakland, R.drawable.oakland2, R.drawable.oakland3, getString(R.string.oaklanHotel), getString(R.string.enugu)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
             horizontalListRoot.setLayoutManager(myHorizontalManager);
             Recycler recycler = new Recycler(infos);
             horizontalListRoot.setAdapter(recycler);
 
             final ArrayList<String> moreinfo = new ArrayList<>();
-            moreinfo.add("Related: ");
-            moreinfo.add("Adig Suites");
-            moreinfo.add("Roban Hotels");
-            moreinfo.add("Golden Royale");
-            moreinfo.add("Ceasar's Palace Hotel");
+            moreinfo.add(getString(R.string.related));
+            moreinfo.add(getString(R.string.adigSuites));
+            moreinfo.add(getString(R.string.robanHotels));
+            moreinfo.add(getString(R.string.gldenRoyale));
+            moreinfo.add(getString(R.string.ceasarPlce));
 
             //the arraylist above contains the names of other hotels in enugu not included in the recycler view list.
             //and they are added dynamically to the ui as children of a linear layout already declared and initialised from the layout.
@@ -75,9 +75,9 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
         if (Lagos.lagosKey) {
             RecyclerView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.ibis3, "Ibis Hotel", "lagos"));
-            infos.add(new info(R.drawable.four_point, R.drawable.four_point1, R.drawable.four_point2, "Four Point Hotel", "lagos"));
-            infos.add(new info(R.drawable.sheraton, R.drawable.sheraton1, R.drawable.sheraton2, "Sheraton Hotel", "lagos"));
+            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.ibis3, getString(R.string.ibisHotel), getString(R.string.lagos)));
+            infos.add(new info(R.drawable.four_point, R.drawable.four_point1, R.drawable.four_point2, getString(R.string.fourPoint), getString(R.string.lagos)));
+            infos.add(new info(R.drawable.sheraton, R.drawable.sheraton1, R.drawable.sheraton2, getString(R.string.sheratonHotel), getString(R.string.lagos)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
             horizontalListRoot.setLayoutManager(myHorizontalManager);
             horizontalListRoot.setHasFixedSize(true);
@@ -120,9 +120,9 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
 
             RecyclerView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.metropolitan_hote, "Metropolitan Hotel", "cross river"));
-            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.mirage_hotel_calabar, "Mirage Hotel", "cross river"));
-            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.nondon_hotels, "Mounty Suites", "cross river"));
+            infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.metropolitan_hote, "Metropolitan Hotel", getString(R.string.cross_river)));
+            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.mirage_hotel_calabar, getString(R.string.mirageHotel), getString(R.string.cross_river)));
+            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.nondon_hotels, getString(R.string.moutySuites), getString(R.string.cross_river)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
             horizontalListRoot.setLayoutManager(myHorizontalManager);
             horizontalListRoot.setHasFixedSize(true);
