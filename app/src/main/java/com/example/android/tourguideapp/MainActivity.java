@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment = null;
                 switch (i){
                     case 0:
-                        fragment =  new example();
+                        fragment =  new states();
                     break;
                     case 1:
-                        fragment =  new example2();
+                        fragment =  new emergencyActivity();
                     break;
                 }
                 return fragment;

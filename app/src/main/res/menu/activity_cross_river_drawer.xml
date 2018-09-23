@@ -5,33 +5,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_accomdation"
             android:icon="@drawable/ic_hotel_black_24dp"
             android:title="Accomodation" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_touristAttractions"
             android:icon="@drawable/ic_pool_black_24dp"
             android:title="Tourist Attraction" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_superMarkets"
             android:icon="@drawable/ic_store_black_24dp"
             android:title="Super Markets" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_info"
             android:icon="@drawable/ic_feedback_black_24dp"
             android:title="Info" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Navigate Home">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_keyboard_backspace_black_24dp"
+                android:title="Home" />
         </menu>
     </item>
 

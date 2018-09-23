@@ -63,4 +63,10 @@ and then February. See average monthly temperatures below.
 The warmest time of year is generally mid March where highs are regularly around 93.3°F (34.1°C) with temperatures rarely dropping below 78.7°F (25.9°C) at night.</string>
 
     <string name="action_example">Example action</string>
+    <string name="hospitals">Health Centers/Hospitals</string>
+    <string name="police_stations">Police Stations</string>
+    <string name="emergency_lines">Emergency Quick Response Lines</string>
+    <string name="lagos">Lagos</string>
+    <string name="enugu">Enugu</string>
+    <string name="cross_river">Cross River</string>
 </resources>

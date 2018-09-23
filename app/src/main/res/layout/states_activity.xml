@@ -1,51 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".example"
-    android:padding="16dp">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/darker_gray"
+    tools:context=".states">
 
-    <!-- TODO: Update blank fragment layout -->
 
-    <LinearLayout
-        android:orientation="vertical"
+    <TextView
+        android:id="@+id/crossRiver"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Cross River"
-            android:id="@+id/crossRiver"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_marginBottom="32dp"
-            android:background="@android:color/darker_gray"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/black"
+        android:fontFamily="cursive"
+        android:text="@string/cross_river"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
 
-        <TextView android:id="@+id/enugu"
-            android:layout_marginBottom="32dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Enugu"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:background="@android:color/darker_gray"/>
-
-        <TextView android:id="@+id/abuja"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="32dp"
-            android:text="Abuja"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:background="@android:color/darker_gray"/>
-
-        <TextView
-            android:id="@+id/lagos"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="32dp"
-            android:text="Lagos"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:background="@android:color/darker_gray"/>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/enugu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:fontFamily="cursive"
+        android:text="@string/enugu"
+        android:textSize="32sp" />
 
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/lagos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"
+        android:text="@string/lagos"
+        android:textSize="32sp" />
+</LinearLayout>
+
+

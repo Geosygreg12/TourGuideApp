@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class example extends Fragment implements View.OnClickListener{
+public class states extends Fragment implements View.OnClickListener{
 
 
     @Nullable
@@ -23,7 +23,6 @@ public class example extends Fragment implements View.OnClickListener{
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         TextView crossRiver;
         TextView enugu;
-        TextView abuja;
         TextView lagos;
 
         crossRiver = view.findViewById(R.id.crossRiver);
@@ -31,8 +30,6 @@ public class example extends Fragment implements View.OnClickListener{
         crossRiver.setOnClickListener(this);
         enugu = view.findViewById(R.id.enugu);
         enugu.setOnClickListener(this);
-        abuja = view.findViewById(R.id.abuja);
-        abuja.setOnClickListener(this);
         lagos = view.findViewById(R.id.lagos);
         lagos.setOnClickListener(this);
     }

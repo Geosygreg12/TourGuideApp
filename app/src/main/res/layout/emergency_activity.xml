@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".example2"
-    android:padding="16dp">
+    tools:context=".emergencyActivity"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/quick_response_lines"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Emergency Quick Response Lines"
+        android:layout_height="100dp"
+        android:text="@string/emergency_lines"
         android:layout_marginBottom="32dp"
-        android:background="@android:color/darker_gray"/>
+        android:textSize="32sp"
+        android:background="@android:color/black"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:fontFamily="cursive"/>
 
     <TextView
+        android:id="@+id/hospitals"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Health Centers/Hospitals"
+        android:layout_height="100dp"
+        android:text="@string/hospitals"
         android:layout_marginBottom="32dp"
-        android:background="@android:color/darker_gray"/>
+        android:textSize="32sp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"/>
 
     <TextView
+        android:id="@+id/police_stations"
+        android:fontFamily="cursive"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Police Stations"
-        android:background="@android:color/darker_gray"
+        android:layout_height="100dp"
+        android:textSize="32sp"
+        android:text="@string/police_stations"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_marginBottom="32dp"/>
 
-</FrameLayout>
+</LinearLayout>
