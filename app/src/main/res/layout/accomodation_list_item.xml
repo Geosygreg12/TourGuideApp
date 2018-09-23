@@ -16,7 +16,8 @@
         android:layout_height="wrap_content"
         android:textSize="32sp"
         android:layout_gravity="center"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:fontFamily="cursive"/>
 
 
         <LinearLayout

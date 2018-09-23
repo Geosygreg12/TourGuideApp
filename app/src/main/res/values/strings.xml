@@ -2,19 +2,12 @@
     <string name="app_name">Tour Guide App</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="States">States</string>
     <string name="Emergency">Emergency</string>
     <string name="title_activity_cross_river">CrossRiver</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
     <string name="enugu_info">Enugu, nicknamed the “coal city” is the capital of Enugu state in South-Eastern Nigeria.
 The city is popular for its cuisine, robust industries and of course, the local palm wine.
 Despite this, there’s a lot many people don’t know about Enugu. But of course, it’s never too late to learn.
@@ -62,7 +55,6 @@ If you’re looking for the very warmest time to visit Lagos, the hottest months
 and then February. See average monthly temperatures below.
 The warmest time of year is generally mid March where highs are regularly around 93.3°F (34.1°C) with temperatures rarely dropping below 78.7°F (25.9°C) at night.</string>
 
-    <string name="action_example">Example action</string>
     <string name="hospitals">Health Centers/Hospitals</string>
     <string name="police_stations">Police Stations</string>
     <string name="emergency_lines">Emergency Quick Response Lines</string>
