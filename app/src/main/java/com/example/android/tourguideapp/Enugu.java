@@ -56,20 +56,34 @@ public class Enugu extends AppCompatActivity implements NavigationView.OnNavigat
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_accomdation) {
-            enuguKey = true;
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new accomodationFragment()).commit();
-        } else if (id == R.id.nav_touristAttractions) {
-            enuguKey = true;
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new touristAttraction()).commit();
-        } else if (id == R.id.nav_superMarkets) {
-            enuguKey = true;
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new superMarket()).commit();
-        } else if (id == R.id.nav_info) {
-            enuguKey = true;
-            getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new infoFragment()).commit();
-        } else if (id == R.id.nav_home) {
-            startActivity(new Intent(this, MainActivity.class));
+        switch(id){
+            case R.id.nav_accomdation:
+                enuguKey = true;
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new accomodationFragment()).commit();
+                break;
+
+            case R.id.nav_touristAttractions:
+                enuguKey = true;
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new TouristAttraction()).commit();
+                break;
+
+            case R.id.nav_superMarkets:
+                enuguKey = true;
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new SuperMarket()).commit();
+                break;
+
+            case R.id.nav_info:
+                enuguKey = true;
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new infoFragment()).commit();
+                break;
+
+            case R.id.nav_home:
+                startActivity(new Intent(this, MainActivity.class));
+                break;
+            case R.id.nav_clubs:
+                enuguKey = true;
+                getSupportFragmentManager().beginTransaction().replace(R.id.frameRoot, new Clubs()).commit();
+                break;
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

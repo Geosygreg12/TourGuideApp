@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                         fragment =  new states();
                     break;
                     case 1:
-                        fragment =  new emergencyActivity();
+                        fragment =  new EmergencyActivity();
                     break;
                 }
                 return fragment;

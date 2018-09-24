@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CrossRiver"
+            android:name=".CrossRiverActivity"
             android:label="@string/title_activity_cross_river"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Lagos"
+        <activity android:name=".LagosActivity"
             android:label="Lagos"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Enugu"

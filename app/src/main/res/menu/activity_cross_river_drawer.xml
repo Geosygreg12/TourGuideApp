@@ -7,27 +7,31 @@
         <item
             android:id="@+id/nav_accomdation"
             android:icon="@drawable/ic_hotel_black_24dp"
-            android:title="Accomodation" />
+            android:title="@string/accomodation" />
         <item
             android:id="@+id/nav_touristAttractions"
             android:icon="@drawable/ic_pool_black_24dp"
-            android:title="Tourist Attraction" />
+            android:title="@string/touristAttraction" />
         <item
             android:id="@+id/nav_superMarkets"
             android:icon="@drawable/ic_store_black_24dp"
-            android:title="Super Markets" />
+            android:title="@string/superMarkets" />
+        <item
+            android:id="@+id/nav_clubs"
+            android:icon="@drawable/ic_audiotrack_black_24dp"
+            android:title="@string/clubs" />
         <item
             android:id="@+id/nav_info"
             android:icon="@drawable/ic_feedback_black_24dp"
-            android:title="Info" />
+            android:title="@string/info" />
     </group>
 
-    <item android:title="Navigate Home">
+    <item android:title="@string/navigateHome">
         <menu>
             <item
                 android:id="@+id/nav_home"
                 android:icon="@drawable/ic_keyboard_backspace_black_24dp"
-                android:title="Home" />
+                android:title="@string/home" />
         </menu>
     </item>
 

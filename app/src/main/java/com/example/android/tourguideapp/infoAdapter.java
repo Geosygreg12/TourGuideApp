@@ -1,5 +1,7 @@
 package com.example.android.tourguideapp;
 
+import android.content.Context;
+
 /* private variables are used to hold the image resource id for the imageviews populated to the
 recycler view
 * */
@@ -14,31 +16,31 @@ class info {
 
     //public constructor which requires 3 image resource, a hotel title an the hotel location
     //the location is used to contruct the uri used for the gogle maps intent
-    public info(int imageList, int firstImage, int secondImage, String title, String location) {
+    public info(Context context, int imageList, int firstImage, int secondImage, String title, String location) {
         mImageAddress = imageList;
         mTitle = title;
         mFirstImageAddress = firstImage;
         mSecondAddress = secondImage;
-        if (location.equalsIgnoreCase("Enugu")) {
-            mLocationAddress = "geo:6.6069,7.5247?q=";
-        } else if (location.equalsIgnoreCase("Cross River")) {
-            mLocationAddress = "geo:6.1670,8.6601?q=";
-        } else if (location.equalsIgnoreCase("lagos")) {
-            mLocationAddress = "geo:6.6080,3.6218?q=";
+        if (location.equalsIgnoreCase(context.getString(R.string.enugu))) {
+            mLocationAddress = context.getString(R.string.enuguLocation);
+        } else if (location.equalsIgnoreCase(context.getString(R.string.crossRiver))) {
+            mLocationAddress = context.getString(R.string.crossRiverLocationUri);
+        } else if (location.equalsIgnoreCase(context.getString(R.string.lagos))) {
+            mLocationAddress = context.getString(R.string.lagosLocationUri);
         }
     }
 
     //a second constructor is used for the touristattractions activity snd super markets which require only an image resource id,
     // the title and the location of the building
-    public info(int imageResourceId, String title, String location) {
+    public info(Context context, int imageResourceId, String title, String location) {
         mImageAddress = imageResourceId;
         mTitle = title;
-        if (location.equalsIgnoreCase("Enugu")) {
-            mLocationAddress = "geo:6.6069,7.5247?q=";
-        } else if (location.equalsIgnoreCase("Cross River")) {
-            mLocationAddress = "geo:6.1670,8.6601?q=";
-        } else if (location.equalsIgnoreCase("lagos")) {
-            mLocationAddress = "geo:6.6080,3.6218?q=";
+        if (location.equalsIgnoreCase(context.getString(R.string.enugu))) {
+            mLocationAddress = context.getString(R.string.enuguLocation);
+        } else if (location.equalsIgnoreCase(context.getString(R.string.crossRiver))) {
+            mLocationAddress = context.getString(R.string.crossRiverLocationUri);
+        } else if (location.equalsIgnoreCase(context.getString(R.string.lagos))) {
+            mLocationAddress = context.getString(R.string.lagosLocationUri);
         }
     }
 

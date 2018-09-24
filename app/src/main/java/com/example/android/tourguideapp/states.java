@@ -39,13 +39,13 @@ public class states extends Fragment implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.crossRiver:
-                startActivity(new Intent(getContext(), CrossRiver.class));
+                startActivity(new Intent(getContext(), CrossRiverActivity.class));
                 break;
             case R.id.enugu:
                 startActivity(new Intent(getContext(), Enugu.class));
                 break;
             case R.id.lagos:
-                startActivity(new Intent(getContext(), Lagos.class));
+                startActivity(new Intent(getContext(), LagosActivity.class));
                 break;
         }
 

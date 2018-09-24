@@ -26,15 +26,15 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
         * to populate views horizontally.
         * */
         if (Enugu.enuguKey) {
-            RecyclerView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
+            RecyclerView myRecyclerView = view.findViewById(R.id.myHorizontalListRoot);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.nondon_hotels, getString(R.string.nondonHotel), getString(R.string.enugu)));
-            infos.add(new info(R.drawable.nike_lake, R.drawable.nike_lake2, R.drawable.nike_lake3, getString(R.string.nikeLakeHotel), getString(R.string.enugu)));
-            infos.add(new info(R.drawable.oakland, R.drawable.oakland2, R.drawable.oakland3, getString(R.string.oaklanHotel), getString(R.string.enugu)));
+            infos.add(new info(getContext(), R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.nondon_hotels, getString(R.string.nondonHotel), getString(R.string.enugu)));
+            infos.add(new info( getContext(), R.drawable.nike_lake, R.drawable.nike_lake2, R.drawable.nike_lake3, getString(R.string.nikeLakeHotel), getString(R.string.enugu)));
+            infos.add(new info( getContext(),R.drawable.oakland, R.drawable.oakland2, R.drawable.oakland3, getString(R.string.oaklanHotel), getString(R.string.enugu)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
-            horizontalListRoot.setLayoutManager(myHorizontalManager);
+            myRecyclerView.setLayoutManager(myHorizontalManager);
             Recycler recycler = new Recycler(infos);
-            horizontalListRoot.setAdapter(recycler);
+            myRecyclerView.setAdapter(recycler);
 
             final ArrayList<String> moreinfo = new ArrayList<>();
             moreinfo.add(getString(R.string.related));
@@ -57,8 +57,8 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
                     @Override
                     public void onClick(View v) {
                         final int num = finalI;
-                        Intent crIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:6.1670,8.6601?q=" + moreinfo.get(num)));
-                        crIntent.setPackage("com.google.android.apps.maps");
+                        Intent crIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.enuguLocation) + moreinfo.get(num)));
+                        crIntent.setPackage(getString(com.example.android.tourguideapp.R.string.googleMapPackage));
                         if (crIntent.resolveActivity(v.getContext().getPackageManager()) != null) {
                             startActivity(crIntent);
                         }
@@ -72,24 +72,23 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
             Enugu.enuguKey = false;
         }
 
-        if (Lagos.lagosKey) {
-            RecyclerView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
+        if (LagosActivity.lagosKey) {
+            RecyclerView myRecyclerView = view.findViewById(R.id.myHorizontalListRoot);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.ibis3, getString(R.string.ibisHotel), getString(R.string.lagos)));
-            infos.add(new info(R.drawable.four_point, R.drawable.four_point1, R.drawable.four_point2, getString(R.string.fourPoint), getString(R.string.lagos)));
-            infos.add(new info(R.drawable.sheraton, R.drawable.sheraton1, R.drawable.sheraton2, getString(R.string.sheratonHotel), getString(R.string.lagos)));
+            infos.add(new info(getContext(), R.drawable.ibis, R.drawable.ibis2, R.drawable.ibis3, getString(R.string.ibisHotel), getString(R.string.lagos)));
+            infos.add(new info(getContext(), R.drawable.four_point, R.drawable.four_point1, R.drawable.four_point2, getString(R.string.fourPoint), getString(R.string.lagos)));
+            infos.add(new info(getContext(), R.drawable.sheraton, R.drawable.sheraton1, R.drawable.sheraton2, getString(R.string.sheratonHotel), getString(R.string.lagos)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
-            horizontalListRoot.setLayoutManager(myHorizontalManager);
-            horizontalListRoot.setHasFixedSize(true);
+            myRecyclerView.setLayoutManager(myHorizontalManager);
+            myRecyclerView.setHasFixedSize(true);
             Recycler recycler = new Recycler(infos);
-            horizontalListRoot.setAdapter(recycler);
+            myRecyclerView.setAdapter(recycler);
 
             final ArrayList<String> moreinfo = new ArrayList<>();
-            moreinfo.add("Related: ");
-            moreinfo.add("Westown Hotel");
-            moreinfo.add("Southern Sun Ikoyi");
-            moreinfo.add("Sheraton Lagos Hotel");
-            moreinfo.add("White House Hotels & Conference");
+            moreinfo.add(getString(R.string.related));
+            moreinfo.add(getString(com.example.android.tourguideapp.R.string.westonHotel));
+            moreinfo.add(getString(com.example.android.tourguideapp.R.string.southernSunIkoyi));
+            moreinfo.add(getString(com.example.android.tourguideapp.R.string.whiteHouse));
             for (int i = 0; i < moreinfo.size(); i++) {
                 LinearLayout linearLayout = view.findViewById(R.id.myVerticalListRoot);
                 TextView textView = new TextView(view.getContext());
@@ -99,8 +98,8 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
                     @Override
                     public void onClick(View v) {
                         final int num = finalI;
-                        Intent crIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:6.1670,8.6601?q=" + moreinfo.get(num)));
-                        crIntent.setPackage("com.google.android.apps.maps");
+                        Intent crIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.lagosLocationUri) + moreinfo.get(num)));
+                        crIntent.setPackage(getString(R.string.googleMapPackage));
                         if (crIntent.resolveActivity(v.getContext().getPackageManager()) != null) {
                             startActivity(crIntent);
                         }
@@ -111,31 +110,31 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
                 textView.setTextColor(getResources().getColor(android.R.color.white));
                 linearLayout.addView(textView);
             }
-            Lagos.lagosKey = false;
+            LagosActivity.lagosKey = false;
 
         }
 
 
-        if (CrossRiver.crossRiverKey) {
+        if (CrossRiverActivity.crossRiverKey) {
 
-            RecyclerView horizontalListRoot = view.findViewById(R.id.myHorizontalListRoot);
+            RecyclerView myRecyclerView = view.findViewById(R.id.myHorizontalListRoot);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info(R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.metropolitan_hote, "Metropolitan Hotel", getString(R.string.cross_river)));
-            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.mirage_hotel_calabar, getString(R.string.mirageHotel), getString(R.string.cross_river)));
-            infos.add(new info(R.drawable.ibis, R.drawable.ibis2, R.drawable.nondon_hotels, getString(R.string.moutySuites), getString(R.string.cross_river)));
+            infos.add(new info(getContext(), R.drawable.nondon_international_hotel_swim, R.drawable.nondon_international_hotel, R.drawable.metropolitan_hote, getString(com.example.android.tourguideapp.R.string.metropolitan), getString(R.string.cross_river)));
+            infos.add(new info(getContext(), R.drawable.ibis, R.drawable.ibis2, R.drawable.mirage_hotel_calabar, getString(R.string.mirageHotel), getString(R.string.cross_river)));
+            infos.add(new info(getContext(), R.drawable.ibis, R.drawable.ibis2, R.drawable.nondon_hotels, getString(R.string.moutySuites), getString(R.string.cross_river)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext(), LinearLayoutManager.HORIZONTAL, false);
-            horizontalListRoot.setLayoutManager(myHorizontalManager);
-            horizontalListRoot.setHasFixedSize(true);
+            myRecyclerView.setLayoutManager(myHorizontalManager);
+            myRecyclerView.setHasFixedSize(true);
             Recycler recycler = new Recycler(infos);
-            horizontalListRoot.setAdapter(recycler);
+            myRecyclerView.setAdapter(recycler);
 
             final ArrayList<String> moreinfo = new ArrayList<>();
-            moreinfo.add("Related: ");
-            moreinfo.add("Paladium Hotel");
-            moreinfo.add("Freemans Hotel");
-            moreinfo.add("Splendour Hotel");
-            moreinfo.add("Pearl Suites");
-            moreinfo.add("Calabar Harbour");
+            moreinfo.add(getString(R.string.related));
+            moreinfo.add(getString(R.string.paladiumHotel));
+            moreinfo.add(getString(R.string.freemansHotel));
+            moreinfo.add(getString(R.string.splendourHotel));
+            moreinfo.add(getString(R.string.pearlSuites));
+            moreinfo.add(getString(R.string.calabarHarbor));
             for (int i = 0; i < moreinfo.size(); i++) {
                 LinearLayout linearLayout = view.findViewById(R.id.myVerticalListRoot);
                 TextView textView = new TextView(view.getContext());
@@ -145,8 +144,8 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
                     @Override
                     public void onClick(View v) {
                         final int num = finalI;
-                        Intent crIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:6.1670,8.6601?q=" + moreinfo.get(num)));
-                        crIntent.setPackage("com.google.android.apps.maps");
+                        Intent crIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.crossRiverLocationUri) + moreinfo.get(num)));
+                        crIntent.setPackage(getString(R.string.googleMapPackage));
                         if (crIntent.resolveActivity(v.getContext().getPackageManager()) != null) {
                             startActivity(crIntent);
                         }
@@ -157,7 +156,7 @@ public class accomodationFragment extends android.support.v4.app.Fragment {
                 textView.setTextColor(getResources().getColor(android.R.color.white));
                 linearLayout.addView(textView);
             }
-            CrossRiver.crossRiverKey = false;
+            CrossRiverActivity.crossRiverKey = false;
         }
 
 

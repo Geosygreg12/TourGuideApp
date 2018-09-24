@@ -23,14 +23,14 @@ public class infoFragment extends android.support.v4.app.Fragment {
             textView.setText(getString(R.string.enugu_info));
             imageView.setImageResource(R.drawable.enugu_food);
             Enugu.enuguKey = false;
-        }else if(Lagos.lagosKey){
+        }else if(LagosActivity.lagosKey){
             textView.setText(getString(R.string.lagos_info));
             imageView.setImageResource(R.drawable.lag_culture);
-            Lagos.lagosKey = false;
-        }else if(CrossRiver.crossRiverKey){
+            LagosActivity.lagosKey = false;
+        }else if(CrossRiverActivity.crossRiverKey){
             textView.setText(getString(R.string.crossRiver_Info));
             imageView.setImageResource(R.drawable.cross_river_culture1);
-            CrossRiver.crossRiverKey = false;
+            CrossRiverActivity.crossRiverKey = false;
         }
 
 

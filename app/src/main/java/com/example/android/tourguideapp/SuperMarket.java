@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-public class superMarket extends android.support.v4.app.Fragment {
+public class SuperMarket extends android.support.v4.app.Fragment {
 
     @Nullable
     @Override
@@ -21,9 +21,9 @@ public class superMarket extends android.support.v4.app.Fragment {
 
             RecyclerView horizontalListRoot = view.findViewById(R.id.touristMe);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info( R.drawable.shoprite, "Shoprite Shopping Mall", "enugu"));
-            infos.add(new info(R.drawable.roban_stores, "Roban Stores", "enugu"));
-            infos.add(new info( R.drawable.spar, "Spar", "enugu"));
+            infos.add(new info(getContext(), R.drawable.shoprite, getString(R.string.shopriteShop), getString(R.string.enugu)));
+            infos.add(new info(getContext(), R.drawable.roban_stores, getString(R.string.robanStores),  getString(R.string.enugu)));
+            infos.add(new info(getContext(), R.drawable.spar, getString(R.string.spar),  getString(R.string.enugu)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext());
             horizontalListRoot.setLayoutManager(myHorizontalManager);
             Recycler recycler = new Recycler(infos);
@@ -31,35 +31,35 @@ public class superMarket extends android.support.v4.app.Fragment {
             Enugu.enuguKey = false;
         }
 
-        if (Lagos.lagosKey){
+        if (LagosActivity.lagosKey){
             RecyclerView horizontalListRoot = view.findViewById(R.id.touristMe);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info( R.drawable.ikeja_city_mall_frontview, "Ikeja City Mall", "lagos"));
-            infos.add(new info(R.drawable.citydia_super_market, "Citydia", "lagos"));
-            infos.add(new info(R.drawable.trimat_lagos_mall, "Trimat", "lagos"));
+            infos.add(new info(getContext(), R.drawable.ikeja_city_mall_frontview, getString(R.string.ikejaCity), getString(R.string.lagos)));
+            infos.add(new info(getContext(), R.drawable.citydia_super_market, getString(R.string.cityDia), getString(R.string.lagos)));
+            infos.add(new info(getContext(), R.drawable.trimat_lagos_mall, getString(R.string.trimat), getString(R.string.lagos)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext());
             horizontalListRoot.setLayoutManager(myHorizontalManager);
             horizontalListRoot.setHasFixedSize(true);
             Recycler recycler = new Recycler(infos);
             horizontalListRoot.setAdapter(recycler);
-            Lagos.lagosKey = false;
+            LagosActivity.lagosKey = false;
 
         }
 
 
-        if (CrossRiver.crossRiverKey){
+        if (CrossRiverActivity.crossRiverKey){
 
             RecyclerView horizontalListRoot = view.findViewById(R.id.touristMe);
             ArrayList<info> infos = new ArrayList<>();
-            infos.add(new info( R.drawable.calabar_mall, "Calabar Mall", "cross river"));
-            infos.add(new info( R.drawable.tinapa_shopping_mall, "Tinapa Shopping Complex", "cross river"));
-            infos.add(new info( R.drawable.cross_river_mall, "Cross River Mall", "cross river"));
+            infos.add(new info(getContext(), R.drawable.calabar_mall, getString(R.string.calabarMall), getString(R.string.cross_river)));
+            infos.add(new info(getContext(), R.drawable.tinapa_shopping_mall, getString(R.string.tinapaShopping), getString(R.string.cross_river)));
+            infos.add(new info(getContext(), R.drawable.cross_river_mall, getString(R.string.crossRiver), getString(R.string.cross_river)));
             LinearLayoutManager myHorizontalManager = new LinearLayoutManager(view.getContext());
             horizontalListRoot.setLayoutManager(myHorizontalManager);
             horizontalListRoot.setHasFixedSize(true);
             Recycler recycler = new Recycler(infos);
             horizontalListRoot.setAdapter(recycler);
-            CrossRiver.crossRiverKey = false;
+            CrossRiverActivity.crossRiverKey = false;
         }
 
 

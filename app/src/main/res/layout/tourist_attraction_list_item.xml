@@ -21,11 +21,11 @@
         android:layout_height="match_parent"
         android:textSize="32sp"
         android:textColor="@android:color/white"
-        android:text="viewHolder"
         android:fontFamily="cursive"
         android:gravity="center_vertical"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="4dp"/>
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp" />
 
 
 </LinearLayout>

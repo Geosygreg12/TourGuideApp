@@ -86,7 +86,7 @@ class Recycler extends RecyclerView.Adapter<Recycler.myViewHolder>{
                     String string = currentInfo.getmTitle();
                     Uri gmmap = Uri.parse(currentInfo.getmLocationAddress() + string);
                     Intent intent = new Intent(Intent.ACTION_VIEW, gmmap);
-                    intent.setPackage("com.google.android.apps.maps");
+                    intent.setPackage(v.getContext().getString(R.string.googleMapPackage));
                     PackageManager pm = v.getContext().getPackageManager();
                     if(intent.resolveActivity(pm)!= null){
                         v.getContext().startActivity(intent);
